@@ -1,0 +1,136 @@
+﻿  IXBench.cpp
+  IXCancellationRequest.cpp
+  IXConnectionState.cpp
+  IXDNSLookup.cpp
+  IXExponentialBackoff.cpp
+  IXGetFreePort.cpp
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXExponentialBackoff.cpp(24,48): warning C4244: '=': conversion from 'double' to 'uint32_t', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXGetFreePort.cpp(54,33): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXGetFreePort.cpp(62,33): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXGetFreePort.cpp(67,29): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+  IXGzipCodec.cpp
+  IXHttp.cpp
+  IXHttpClient.cpp
+  IXHttpServer.cpp
+  IXNetSystem.cpp
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXNetSystem.cpp(156,60): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXNetSystem.cpp(245,36): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+  IXSelectInterrupt.cpp
+  IXSelectInterruptEvent.cpp
+  IXSelectInterruptFactory.cpp
+  IXSelectInterruptPipe.cpp
+  IXSetThreadName.cpp
+  IXSocket.cpp
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocket.cpp(250,40): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocket.cpp(265,48): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocket.cpp(328,31): warning C4244: '+=': conversion from 'ssize_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocket.cpp(329,28): warning C4244: '-=': conversion from 'ssize_t' to 'int', possible loss of data
+  IXSocketAppleSSL.cpp
+  IXSocketConnect.cpp
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketConnect.cpp(48,34): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketConnect.cpp(50,58): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketConnect.cpp(55,33): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketConnect.cpp(63,37): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketConnect.cpp(71,78): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketConnect.cpp(79,37): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketConnect.cpp(89,37): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketConnect.cpp(85,24): warning C4244: 'return': conversion from 'ix::socket_t' to 'int', possible loss of data
+  IXSocketFactory.cpp
+  Compiling...
+  IXSocketMbedTLS.cpp
+  IXSocketOpenSSL.cpp
+  IXSocketServer.cpp
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketServer.cpp(97,33): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketServer.cpp(114,37): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketServer.cpp(126,37): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketServer.cpp(143,37): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketServer.cpp(155,37): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketServer.cpp(169,33): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketServer.cpp(232,29): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketServer.cpp(273,34): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketServer.cpp(293,54): warning C4244: 'argument': conversion from 'ix::socket_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXSocketServer.cpp(315,35): warning C4244: '=': conversion from 'SOCKET' to 'int', possible loss of data
+  IXSocketTLSOptions.cpp
+  IXStrCaseCompare.cpp
+  IXUdpSocket.cpp
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXUdpSocket.cpp(70,25): warning C4244: 'argument': conversion from 'SOCKET' to 'const _Ty', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXUdpSocket.cpp(70,25): warning C4244:         with
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXUdpSocket.cpp(70,25): warning C4244:         [
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXUdpSocket.cpp(70,25): warning C4244:             _Ty=int
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXUdpSocket.cpp(70,25): warning C4244:         ]
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXUdpSocket.cpp(113,48): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\dependencies\ixwebsocket\IXUdpSocket.cpp(124,30): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  IXUrlParser.cpp
+  IXUserAgent.cpp
+  IXUuid.cpp
+  IXWebSocket.cpp
+  IXWebSocketCloseConstants.cpp
+  IXWebSocketHandshake.cpp
+  IXWebSocketHttpHeaders.cpp
+  IXWebSocketPerMessageDeflate.cpp
+  IXWebSocketPerMessageDeflateCodec.cpp
+  IXWebSocketPerMessageDeflateOptions.cpp
+  IXWebSocketProxyServer.cpp
+  IXWebSocketServer.cpp
+  IXWebSocketTransport.cpp
+  Ast.cpp
+  Compiling...
+  BuiltinFolding.cpp
+  Builtins.cpp
+  BytecodeBuilder.cpp
+  Compiler.cpp
+  Confusables.cpp
+  ConstantFolding.cpp
+  CostModel.cpp
+  lcode.cpp
+  Lexer.cpp
+  Location.cpp
+  Parser.cpp
+  StringUtils.cpp
+  TableShape.cpp
+  TimeTrace.cpp
+  Types.cpp
+  ValueTracking.cpp
+  EntryPoint.cpp
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\EntryPoint.cpp(234,174): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\EntryPoint.cpp(259,178): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\EntryPoint.cpp(261,174): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\EntryPoint.cpp(265,50): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Execution.cpp
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\src\Execution.cpp(30,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Bridge.cpp
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\src\Utils\Bridge.cpp(772,32): warning C4101: 'e': unreferenced local variable
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(4829,18): warning C4244: '=': conversion from 'WCHAR' to 'char', possible loss of data
+  (compiling source file 'src/Utils/Bridge.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(4829,18):
+      the template instantiation context (the oldest one first) is
+          C:\Users\Volxp\Downloads\Inj (1)\Cloudy\src\Utils\Bridge.cpp(286,34):
+          see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<WCHAR*,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Iter=WCHAR *,
+              _Alloc=std::allocator<char>
+          ]
+              C:\Users\Volxp\Downloads\Inj (1)\Cloudy\src\Utils\Bridge.cpp(286,21):
+              see the first reference to 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string' in 'StartServer'
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(788,17):
+          see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<WCHAR*,WCHAR*,_Size_type>(_Iter,const _Sent,_Size)' being compiled
+          with
+          [
+              _Size_type=unsigned __int64,
+              _Iter=WCHAR *,
+              _Sent=WCHAR *,
+              _Size=unsigned __int64
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xstring(944,18):
+          see reference to function template instantiation '_OutIt *std::_Copy_n_unchecked4<WCHAR*,_Size,char*>(_InIt,_SizeTy,_OutIt)' being compiled
+          with
+          [
+              _OutIt=char *,
+              _Size=unsigned __int64,
+              _InIt=WCHAR *,
+              _SizeTy=unsigned __int64
+          ]
+  
+  Instances.cpp
+C:\Users\Volxp\Downloads\Inj (1)\Cloudy\src\Utils\Bridge.cpp(1,1): error C1085: Cannot write compiler generated file: 'C:\Users\Volxp\Downloads\Inj (1)\Cloudy\x64\Release\Bridge.obj': No space left on device

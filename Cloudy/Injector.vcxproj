@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b196a5f5-76ac-4a61-a4d2-2c7f59148ba5}</ProjectGuid>
+    <RootNamespace>FaucetExec</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Injector</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\danie\source\repos\FaucetExec\FaucetExec\dependencies</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);C:\Users\danie\Downloads\TridentV2\thedecentsource\libraries\SDK\Lib\x64</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <Optimization>MaxSpeed</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dependencies\ixwebsocket\IXBench.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXCancellationRequest.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXConnectionState.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXDNSLookup.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXExponentialBackoff.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXGetFreePort.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXGzipCodec.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXHttp.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXHttpClient.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXHttpServer.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXNetSystem.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXSelectInterrupt.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXSelectInterruptEvent.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXSelectInterruptFactory.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXSelectInterruptPipe.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXSetThreadName.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXSocket.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXSocketAppleSSL.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXSocketConnect.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXSocketFactory.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXSocketMbedTLS.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXSocketOpenSSL.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXSocketServer.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXSocketTLSOptions.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXStrCaseCompare.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXUdpSocket.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXUrlParser.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXUserAgent.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXUuid.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXWebSocket.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXWebSocketCloseConstants.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXWebSocketHandshake.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXWebSocketHttpHeaders.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXWebSocketPerMessageDeflate.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXWebSocketPerMessageDeflateCodec.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXWebSocketPerMessageDeflateOptions.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXWebSocketProxyServer.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXWebSocketServer.cpp" />
+    <ClCompile Include="dependencies\ixwebsocket\IXWebSocketTransport.cpp" />
+    <ClCompile Include="dependencies\Luau\Ast.cpp" />
+    <ClCompile Include="dependencies\Luau\BuiltinFolding.cpp" />
+    <ClCompile Include="dependencies\Luau\Builtins.cpp" />
+    <ClCompile Include="dependencies\Luau\BytecodeBuilder.cpp" />
+    <ClCompile Include="dependencies\Luau\Compiler.cpp" />
+    <ClCompile Include="dependencies\Luau\Confusables.cpp" />
+    <ClCompile Include="dependencies\Luau\ConstantFolding.cpp" />
+    <ClCompile Include="dependencies\Luau\CostModel.cpp" />
+    <ClCompile Include="dependencies\Luau\lcode.cpp" />
+    <ClCompile Include="dependencies\Luau\Lexer.cpp" />
+    <ClCompile Include="dependencies\Luau\Location.cpp" />
+    <ClCompile Include="dependencies\Luau\Parser.cpp" />
+    <ClCompile Include="dependencies\Luau\StringUtils.cpp" />
+    <ClCompile Include="dependencies\Luau\TableShape.cpp" />
+    <ClCompile Include="dependencies\Luau\TimeTrace.cpp" />
+    <ClCompile Include="dependencies\Luau\Types.cpp" />
+    <ClCompile Include="dependencies\Luau\ValueTracking.cpp" />
+    <ClCompile Include="dependencies\lz4\lz4.c" />
+    <ClCompile Include="dependencies\lz4\lz4hc.c" />
+    <ClCompile Include="dependencies\zstd\common\debug.c" />
+    <ClCompile Include="dependencies\zstd\common\entropy_common.c" />
+    <ClCompile Include="dependencies\zstd\common\error_private.c" />
+    <ClCompile Include="dependencies\zstd\common\fse_decompress.c" />
+    <ClCompile Include="dependencies\zstd\common\pool.c" />
+    <ClCompile Include="dependencies\zstd\common\threading.c" />
+    <ClCompile Include="dependencies\zstd\common\xxhash.c" />
+    <ClCompile Include="dependencies\zstd\common\zstd_common.c" />
+    <ClCompile Include="dependencies\zstd\compress\fse_compress.c" />
+    <ClCompile Include="dependencies\zstd\compress\hist.c" />
+    <ClCompile Include="dependencies\zstd\compress\huf_compress.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstdmt_compress.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_compress.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_compress_literals.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_compress_sequences.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_compress_superblock.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_double_fast.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_fast.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_lazy.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_ldm.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_opt.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_preSplit.c" />
+    <ClCompile Include="dependencies\zstd\decompress\huf_decompress.c" />
+    <ClCompile Include="dependencies\zstd\decompress\zstd_ddict.c" />
+    <ClCompile Include="dependencies\zstd\decompress\zstd_decompress.c" />
+    <ClCompile Include="dependencies\zstd\decompress\zstd_decompress_block.c" />
+    <ClCompile Include="dependencies\zstd\deprecated\zbuff_common.c" />
+    <ClCompile Include="dependencies\zstd\deprecated\zbuff_compress.c" />
+    <ClCompile Include="dependencies\zstd\deprecated\zbuff_decompress.c" />
+    <ClCompile Include="EntryPoint.cpp" />
+    <ClCompile Include="src\Execution.cpp" />
+    <ClCompile Include="src\Utils\Bridge.cpp" />
+    <ClCompile Include="src\Instance\Instances.cpp" />
+    <ClCompile Include="src\Utils\ByteCompiler.cpp" />
+    <ClCompile Include="src\Utils\Memory\Driver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dependencies\base64\base64.hpp" />
+    <ClInclude Include="dependencies\ixwebsocket\IXBase64.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXBench.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXCancellationRequest.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXConnectionState.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXDNSLookup.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXExponentialBackoff.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXGetFreePort.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXGzipCodec.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXHttp.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXHttpClient.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXHttpServer.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXNetSystem.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXProgressCallback.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXSelectInterrupt.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXSelectInterruptEvent.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXSelectInterruptFactory.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXSelectInterruptPipe.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXSetThreadName.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXSocket.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXSocketAppleSSL.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXSocketConnect.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXSocketFactory.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXSocketMbedTLS.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXSocketOpenSSL.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXSocketServer.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXSocketTLSOptions.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXStrCaseCompare.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXUdpSocket.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXUniquePtr.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXUrlParser.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXUserAgent.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXUtf8Validator.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXUuid.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocket.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketCloseConstants.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketCloseInfo.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketErrorInfo.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketHandshake.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketHandshakeKeyGen.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketHttpHeaders.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketInitResult.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketMessage.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketMessageType.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketOpenInfo.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketPerMessageDeflate.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketPerMessageDeflateCodec.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketPerMessageDeflateOptions.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketProxyServer.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketSendData.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketSendInfo.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketServer.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketTransport.h" />
+    <ClInclude Include="dependencies\ixwebsocket\IXWebSocketVersion.h" />
+    <ClInclude Include="dependencies\luacode.h" />
+    <ClInclude Include="dependencies\Luau\Ast.h" />
+    <ClInclude Include="dependencies\Luau\BuiltinFolding.h" />
+    <ClInclude Include="dependencies\Luau\Builtins.h" />
+    <ClInclude Include="dependencies\Luau\Bytecode.h" />
+    <ClInclude Include="dependencies\Luau\BytecodeBuilder.h" />
+    <ClInclude Include="dependencies\Luau\BytecodeUtils.h" />
+    <ClInclude Include="dependencies\Luau\Common.h" />
+    <ClInclude Include="dependencies\Luau\Compiler.h" />
+    <ClInclude Include="dependencies\Luau\Confusables.h" />
+    <ClInclude Include="dependencies\Luau\ConstantFolding.h" />
+    <ClInclude Include="dependencies\Luau\CostModel.h" />
+    <ClInclude Include="dependencies\Luau\DenseHash.h" />
+    <ClInclude Include="dependencies\Luau\ExperimentalFlags.h" />
+    <ClInclude Include="dependencies\Luau\Lexer.h" />
+    <ClInclude Include="dependencies\Luau\Location.h" />
+    <ClInclude Include="dependencies\Luau\ParseOptions.h" />
+    <ClInclude Include="dependencies\Luau\Parser.h" />
+    <ClInclude Include="dependencies\Luau\ParseResult.h" />
+    <ClInclude Include="dependencies\Luau\StringUtils.h" />
+    <ClInclude Include="dependencies\Luau\TableShape.h" />
+    <ClInclude Include="dependencies\Luau\TimeTrace.h" />
+    <ClInclude Include="dependencies\Luau\Types.h" />
+    <ClInclude Include="dependencies\Luau\ValueTracking.h" />
+    <ClInclude Include="dependencies\Luau\Variant.h" />
+    <ClInclude Include="dependencies\Luau\VecDeque.h" />
+    <ClInclude Include="dependencies\json\httplib.h" />
+    <ClInclude Include="dependencies\json\nlohmann\json.hpp" />
+    <ClInclude Include="dependencies\json\nlohmann\json_fwd.hpp" />
+    <ClInclude Include="dependencies\lz4\lz4.h" />
+    <ClInclude Include="dependencies\lz4\lz4hc.h" />
+    <ClInclude Include="dependencies\lz4\server\httplib.h" />
+    <ClInclude Include="dependencies\lz4\server\server.h" />
+    <ClInclude Include="dependencies\server\Bridge.h" />
+    <ClInclude Include="dependencies\server\httplib.h" />
+    <ClInclude Include="dependencies\server\mainserver.h" />
+    <ClInclude Include="dependencies\server\server.h" />
+    <ClInclude Include="dependencies\xxhash.h" />
+    <ClInclude Include="dependencies\zstd\common\allocations.h" />
+    <ClInclude Include="dependencies\zstd\common\bits.h" />
+    <ClInclude Include="dependencies\zstd\common\bitstream.h" />
+    <ClInclude Include="dependencies\zstd\common\compiler.h" />
+    <ClInclude Include="dependencies\zstd\common\cpu.h" />
+    <ClInclude Include="dependencies\zstd\common\debug.h" />
+    <ClInclude Include="dependencies\zstd\common\error_private.h" />
+    <ClInclude Include="dependencies\zstd\common\fse.h" />
+    <ClInclude Include="dependencies\zstd\common\huf.h" />
+    <ClInclude Include="dependencies\zstd\common\mem.h" />
+    <ClInclude Include="dependencies\zstd\common\pool.h" />
+    <ClInclude Include="dependencies\zstd\common\portability_macros.h" />
+    <ClInclude Include="dependencies\zstd\common\threading.h" />
+    <ClInclude Include="dependencies\zstd\common\xxhash.h" />
+    <ClInclude Include="dependencies\zstd\common\zstd_deps.h" />
+    <ClInclude Include="dependencies\zstd\common\zstd_internal.h" />
+    <ClInclude Include="dependencies\zstd\common\zstd_trace.h" />
+    <ClInclude Include="dependencies\zstd\compress\clevels.h" />
+    <ClInclude Include="dependencies\zstd\compress\hist.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstdmt_compress.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_compress_internal.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_compress_literals.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_compress_sequences.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_compress_superblock.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_cwksp.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_double_fast.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_fast.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_lazy.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_ldm.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_ldm_geartab.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_opt.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_preSplit.h" />
+    <ClInclude Include="dependencies\zstd\decompress\zstd_ddict.h" />
+    <ClInclude Include="dependencies\zstd\decompress\zstd_decompress_block.h" />
+    <ClInclude Include="dependencies\zstd\decompress\zstd_decompress_internal.h" />
+    <ClInclude Include="dependencies\zstd\deprecated\zbuff.h" />
+    <ClInclude Include="dependencies\zstd\zdict.h" />
+    <ClInclude Include="dependencies\zstd\zstd.h" />
+    <ClInclude Include="dependencies\zstd\zstd_errors.h" />
+    <ClInclude Include="EntryPoint.hpp" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\Execution.hpp" />
+    <ClInclude Include="src\Utils\Bridge.hpp" />
+    <ClInclude Include="src\Instance\Instances.hpp" />
+    <ClInclude Include="src\Offsets\Offsets.hpp" />
+    <ClInclude Include="src\Utils\ByteCompiler.hpp" />
+    <ClInclude Include="src\Utils\Memory\Driver.hpp" />
+    <ClInclude Include="src\Utils\Memory\Roblox.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dependencies\frontend\index.html" />
+    <None Include="dependencies\zstd\BUCK" />
+    <None Include="dependencies\zstd\decompress\huf_decompress_amd64.S" />
+    <None Include="dependencies\zstd\libzstd.mk" />
+    <None Include="dependencies\zstd\libzstd.pc.in" />
+    <None Include="dependencies\zstd\Makefile" />
+    <None Include="dependencies\zstd\module.modulemap" />
+    <None Include="dependencies\zstd\README.md" />
+    <None Include="init.lua" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\nlohmann.json.3.11.2\build\native\nlohmann.json.targets" Condition="Exists('..\packages\nlohmann.json.3.11.2\build\native\nlohmann.json.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\nlohmann.json.3.11.2\build\native\nlohmann.json.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\nlohmann.json.3.11.2\build\native\nlohmann.json.targets'))" />
+  </Target>
+</Project>
